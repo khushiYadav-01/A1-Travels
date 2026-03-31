@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Tours & Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">A1 Tours & Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vehicles">Vehicles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bookings">My Bookings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-3 fw-bold">Discover Amazing Destinations</h1>
+                    <p class="lead">Your dream vacation starts here</p>
+                    <a href="#tours" class="btn btn-primary btn-lg">Explore Tours</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tours Section -->
+    <section id="tours" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Tour Packages</h2>
+            <div class="row g-4">
+                <!-- Tour Card 1 -->
+                <div class="col-md-4">
+                    <div class="card tour-card">
+                        <img src="https://source.unsplash.com/600x400/?mountain" class="card-img-top" alt="Mountain Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Mountain Adventure</h5>
+                            <p class="card-text">Experience the breathtaking views of the Himalayas with our 7-day mountain tour package.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$999</span>
+                                <button class="btn btn-primary book-now" data-tour="Mountain Adventure">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour Card 2 -->
+                <div class="col-md-4">
+                    <div class="card tour-card">
+                        <img src="https://source.unsplash.com/600x400/?beach" class="card-img-top" alt="Beach Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Tropical Paradise</h5>
+                            <p class="card-text">Relax on pristine beaches and enjoy the crystal clear waters of the Indian Ocean.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$1,299</span>
+                                <button class="btn btn-primary book-now" data-tour="Tropical Paradise">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour Card 3 -->
+                <div class="col-md-4">
+                    <div class="card tour-card">
+                        <img src="https://source.unsplash.com/600x400/?desert" class="card-img-top" alt="Desert Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Desert Safari</h5>
+                            <p class="card-text">Experience the magic of the desert with our overnight safari and cultural tour.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$799</span>
+                                <button class="btn btn-primary book-now" data-tour="Desert Safari">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicles Section -->
+    <section id="vehicles" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Fleet</h2>
+            <div class="row g-4">
+                <!-- Vehicle 1 -->
+                <div class="col-md-4">
+                    <div class="card vehicle-card">
+                        <img src="https://source.unsplash.com/600x400/?suv" class="card-img-top" alt="SUV">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium SUV</h5>
+                            <p class="card-text">Comfortable and spacious for up to 6 people. Perfect for family trips.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-users"></i> 6 Seats</li>
+                                <li><i class="fas fa-suitcase"></i> 4 Large Bags</li>
+                                <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100" data-vehicle="Premium SUV">Book This Vehicle</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vehicle 2 -->
+                <div class="col-md-4">
+                    <div class="card vehicle-card">
+                        <img src="https://source.unsplash.com/600x400/?luxury-car" class="card-img-top" alt="Luxury Car">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Sedan</h5>
+                            <p class="card-text">Travel in style with our premium luxury sedan. Perfect for business or special occasions.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-users"></i> 4 Seats</li>
+                                <li><i class="fas fa-suitcase"></i> 2 Large Bags</li>
+                                <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100" data-vehicle="Luxury Sedan">Book This Vehicle</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vehicle 3 -->
+                <div class="col-md-4">
+                    <div class="card vehicle-card">
+                        <img src="https://source.unsplash.com/600x400/?minivan" class="card-img-top" alt="Minivan">
+                        <div class="card-body">
+                            <h5 class="card-title">Family Minivan</h5>
+                            <p class="card-text">Spacious and comfortable for larger groups or families with lots of luggage.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-users"></i> 8 Seats</li>
+                                <li><i class="fas fa-suitcase"></i> 6 Large Bags</li>
+                                <li><i class="fas fa-baby-carriage"></i> Child Seats Available</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100" data-vehicle="Family Minivan">Book This Vehicle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle mb-3" width="80" alt="Client">
+                            <h5 class="card-title">Sarah Johnson</h5>
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"The mountain tour was absolutely amazing! The guides were knowledgeable and the views were breathtaking. Will definitely book again!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle mb-3" width="80" alt="Client">
+                            <h5 class="card-title">Michael Chen</h5>
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="card-text">"Great service and comfortable vehicles. The desert safari was a once-in-a-lifetime experience. Highly recommended!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mb-3" width="80" alt="Client">
+                            <h5 class="card-title">Emily Rodriguez</h5>
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text">"The beach resort was paradise! Everything was perfectly arranged and the staff was very helpful. Will be back next year!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Get in Touch</h4>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Our Office</h4>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Address</h5>
+                                <p>123 Travel Street, Holiday City, HC 12345</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
+                                <p>info@a1tours.com</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-clock text-primary me-2"></i> Working Hours</h5>
+                                <p>Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 5:00 PM<br>Sunday: Closed</p>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="bookings" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Bookings</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-tabs" id="bookingTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab">Upcoming</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="past-tab" data-bs-toggle="tab" data-bs-target="#past" type="button" role="tab">Past</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment" type="button" role="tab">Make Payment</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3" id="bookingTabsContent">
+                        <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Booking ID</th>
+                                            <th>Tour/Vehicle</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="upcomingBookings">
+                                        <!-- Bookings will be loaded here via JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="past" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Booking ID</th>
+                                            <th>Tour/Vehicle</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="pastBookings">
+                                        <!-- Past bookings will be loaded here via JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="payment" role="tabpanel">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-4">Make a Payment</h4>
+                                            <form id="paymentForm">
+                                                <div class="mb-3">
+                                                    <label for="bookingId" class="form-label">Booking ID</label>
+                                                    <input type="text" class="form-control" id="bookingId" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="cardNumber" class="form-label">Card Number</label>
+                                                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="expiryDate" class="form-label">Expiry Date</label>
+                                                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="cvv" class="form-label">CVV</label>
+                                                        <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="amount" class="form-label">Amount</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">$</span>
+                                                        <input type="number" class="form-control" id="amount" required>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary w-100">Pay Now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Tour/Vehicle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <input type="hidden" id="bookingType" name="bookingType">
+                        <input type="hidden" id="itemName" name="itemName">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="bookingEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Number of Guests</label>
+                            <input type="number" class="form-control" id="guests" min="1" value="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialRequests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="specialRequests" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="confirmBooking">Confirm Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>About A1 Tours & Travel</h5>
+                    <p>Your trusted partner for unforgettable travel experiences. We specialize in creating personalized tours and providing premium transportation services.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#tours" class="text-white">Tours</a></li>
+                        <li><a href="#vehicles" class="text-white">Vehicles</a></li>
+                        <li><a href="#reviews" class="text-white">Reviews</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Holiday City</li>
+                        <li><i class="fas fa-phone-alt me-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@a1tours.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest deals and offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 A1 Tours & Travel. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary btn-lg back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
